@@ -1,5 +1,4 @@
-const path = require('path');
-//const WriteFilePlugin = require('write-file-webpack-plugin');
+//const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
