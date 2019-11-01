@@ -30,26 +30,11 @@ module.exports = {
           }
         }
       },
-      //SASS LOADER
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          //3. Plugin splits the css into a seperate file
-          MiniCssExtractPlugin.loader,
-          //3. Injects styles into the DOM
-          //"style-loader"
-          //2. Turns css into commonjs
-          "css-loader",
-          //1.Compiles Sass to CSS
-          "sass-loader"
-        ],
-        exclude: /node_modules/,
-      },
     ],
   },
-  // resolve: {
-  //   extensions: ['.tsx', '.ts', '.js'],
-  // },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', ".json"],
+  },
   plugins: [
     // new MiniCssExtractPlugin({
     //   filename: '[name].[contentHash].css'

@@ -40,4 +40,22 @@ module.exports = merge(common, {
     //clean hashes so that on each build, previous versions of hashes are removed
     new CleanWebpackPlugin(),
   ],
+
+  module: {
+    rules: [
+      //SASS LOADER
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          //3. Plugin splits the css into a seperate file
+          MiniCssExtractPlugin.loader,
+          //2. Turns css into commonjs
+          "css-loader",
+          //1.Compiles Sass to CSS
+          "sass-loader"
+        ],
+        exclude: /node_modules/
+      },
+    ]
+  }
 });

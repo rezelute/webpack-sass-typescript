@@ -1,5 +1,3 @@
-
-
 //dom loaded
 document.addEventListener("DOMContentLoaded", function (event){
   hello_world();
@@ -7,5 +5,5 @@ document.addEventListener("DOMContentLoaded", function (event){
 
 function hello_world()
 {
-  console.log("hello world 3");
+  console.log("hello world 4");
 }
